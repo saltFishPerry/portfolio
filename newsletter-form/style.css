@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root { 
+    --Tomato: hsl(4, 100%, 67%);
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    height: calc(100vh);
+}
+
+button:hover,input[type=submit]:hover {
+    background: linear-gradient(to right, hsl(4, 100%, 55%), var(--Tomato));
+    cursor: pointer;
+} 
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--White);
+    color: var(--DarkSlateGrey);
+    font-weight: 700;
+    height: 100%;
+}
+
+.main {
+    padding-bottom: 2.5rem;
+}
+
+.subtitle-text {
+    font-weight: 400;
+    margin: 1.250rem 0rem 1.250rem 1.250rem;
+}
+
+.input-container .image-container img {
+    width: 100%;
+}
+
+.title-section .title-text {
+    font-size: 2.5rem;
+    margin: 2rem 0rem 1.250rem 1.250rem;
+}
+
+.feature-points-section {
+    font-size: 1.050rem;
+    font-weight: 400;
+    margin: 1.250rem 0rem 2rem 1.250rem;
+}
+
+.feature-points-section ul {
+    display: grid;
+    gap: 1rem;
+}
+
+.feature-points-section img {
+    margin-right: 1rem;
+}
+
+.feature-points-section .feature-point-item{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.input-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container form div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+.input-container form .email-input-title {
+    font-size: 0.850rem;
+    margin: 0rem 0rem 0rem 1.250rem;
+}
+
+.input-container form .email-invalid-text {
+    visibility: hidden;
+    font-size: 0.850rem;
+    color: var(--Tomato);
+    margin-left: auto;
+    margin-right: 1.250rem;
+}
+
+.input-container form input[name=email] {
+    padding: 1.100rem;
+    border-color: hsla(231, 7%, 60%, 0.5);
+    border-width: 0.100rem;
+    border-style: solid;
+    justify-self: center;
+    margin: 1.1rem 1.250rem 0rem 1.250rem;
+    border-radius: 0.500rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.input-container form input[name=email]:focus {
+    outline: none;
+    border-color: inherit;
+}
+
+.input-container form input[type=submit] {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    background-color: var(--DarkSlateGrey);
+    color: var(--White);
+    border-style: none;
+    margin: 1.250rem 1.250rem 0rem 1.250rem;
+    padding: 1.100rem;
+    border-radius: 0.500rem;
+}
+
+.success-container {
+    color: var(--DarkSlateGrey);
+    margin: 0rem 1.5rem;
+    padding-top: 8rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.success-container div {
+    margin: auto;
+    padding-bottom: 18rem;
+}
+
+.success-container img {
+    margin-bottom: 1rem;
+    width: min-content;
+}
+
+.success-container .success-subtext {
+    font-size: 1.00rem;
+}
+
+.success-container .success-subtext #email-value{
+    font-weight: 700;
+}
+
+.success-container .success-title {
+    font-weight: 700;
+    font-size: 2.65rem;
+    margin: 1.25rem 0rem;
+}
+
+.success-container .dismiss-button {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--DarkSlateGrey);
+    color: var(--White);
+    padding: 1.2rem 0rem;
+    border-style: none;
+    border-radius: 0.500rem;
+    font-size: 1.05rem;
+    align-self: center;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+@media(min-width: 1440px){
+    body {
+        display: flex;
+        background-color: var(--CharcoalGrey);
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .success-container {
+        background-color: aliceblue;
+        height: fit-content;
+        width: 30%;
+        border-radius: 2rem;
+        padding: 2rem 3rem 0rem 3rem;
+    }
+
+    .success-container div {
+        padding-bottom: 2rem;
+    }
+
+    .success-container img {
+        width: min-content;
+    }
+
+    .success-container .success-subtext {
+        font-size: 0.9rem;
+    }
+
+    .success-container .success-title {
+        font-size: 3.1rem;
+    }
+
+    .success-container .dismiss-button {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .input-container {
+        display: flex;
+        flex-direction: row-reverse;
+        height: fit-content;
+        width: fit-content;
+        border-radius: 2rem;
+        margin: auto;
+        padding: 1.250rem;
+    }
+
+    .main {
+        align-self: center;
+        padding-right: 2.5rem;
+        width: 50%;
+    }
+
+    .input-container .title-text {
+        font-size: 3.5rem;
+        margin-left: 0rem;
+    }
+
+    .input-container .subtitle-text {
+        font-size: 1rem;
+        margin-left: 0rem;
+    }
+
+    .input-container form .email-input-title, 
+    .input-container form input[name=email],
+    .input-container form input[type=submit],
+    .input-container .feature-points-section {
+        margin-left: 0rem;
+    }
+}

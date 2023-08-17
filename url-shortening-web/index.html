@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Shortly URL shortening API Challenge</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerContainer">
+        <h2>Shortly</h2>
+
+        <!-- Burger menu icon and animation -->
+        <div
+          class="burger-menu-btn"
+          onclick="myFunction(this); openSlideMenu();"
+        >
+          <div class="burger-menu-bar-1"></div>
+          <div class="burger-menu-bar-2"></div>
+          <div class="burger-menu-bar-3"></div>
+        </div>
+
+        <div id="burger-menu" class="sidepanel">
+          <div class="header_link">
+            <p><a href="https://www.google.com/">Features</a></p>
+            <p><a href="https://www.google.com/">Pricing</a></p>
+            <p><a href="https://www.google.com/">Resources</a></p>
+          </div>
+
+          <div class="header_link2">
+            <p><a href="#">Login</a></p>
+            <button><a href="#">Sign Up</a></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- body section -->
+      <section>
+        <div class="bodyContainer">
+          <div class="bodySec1">
+            <div class="illustration-working">
+              <img src="./images/illustration-working.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="bodySec2">
+            <div class="mainText">
+              <h1>More than just shorter links</h1>
+            </div>
+
+            <div class="subText">
+              <p>
+                Build your brand's recognition and get detailed insights on how
+                your links are performing
+              </p>
+            </div>
+
+            <div class="mainBtn">
+              <button><p>Get started</p></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section2">
+          <!-- form section -->
+          <div class="form_container">
+            <form action="#">
+              <div class="form">
+                <input type="text" value="" id="link"
+                  placeholder="Shorten a link here..."/>
+              </div>
+              <div class="alert_text">
+                <p><em> Please add a link </em></p>
+              </div>
+              <div class="form_text">
+                <input type="submit" value="Shorten It!" />
+              </div>
+            </form>
+          </div>
+
+          <div class="link_output">
+            <div class="input_res"></div>
+            <div class="input_link">
+                <!-- This is where the short api link will display an output. -->
+            </div>
+
+            <div class="tooltip">
+              <button class="resButton" onclick="myFunctions()" onmouseout="outFunc()">
+              <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+              Copy text
+              </button>
+              </div>
+
+          </div>
+
+          <!-- statistics section -->
+          <div class="statistics">
+            <h2>Advanced Statistics</h2>
+            <div class="statistics_text">
+              <p>
+                Track how your links are performing across the web with our
+                advanced statistics dashboard.
+              </p>
+            </div>
+          </div>
+
+          <!-- card section -->
+          <div class="card_container">
+            <div class="card recognition">
+              <div class="rec_img">
+                <img src="./images/icon-brand-recognition.svg" alt="" />
+              </div>
+              <h2>Brand Recognition</h2>
+              <p>
+                Boost your brand recognition with each click. Generic links
+                don't mean a thing. Branded links helo instil confidence in your
+                content.
+              </p>
+            </div>
+
+            <div class="card records">
+              <div class="records_img">
+                <img src="./images/icon-detailed-records.svg" alt="" />
+              </div>
+              <h2>Detailed Record</h2>
+              <p>
+                Gain insight into who is clicking your links. Knowing when and
+                where people engage with your content helps inform better
+                decisions.
+              </p>
+            </div>
+
+            <div class="card customizable">
+              <div class="custom_img">
+                <img src="./images/icon-fully-customizable.svg" alt="" />
+              </div>
+              <h2>Fully Customizable</h2>
+              <p>
+                Improve brand awareness and content discoverability through
+                customizable links, supercharging audience engagement.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="boost">
+          <h2>Boost your links today</h2>
+          <button><p>Get Started</p></button>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer_container">
+          <div class="footer_mainText">
+            <h1>Shortly</h1>
+          </div>
+
+          <div class="footer_link first_Link">
+            <h4>Features</h4>
+            <a href="#">Link Shortening</a>
+            <a href="">Branded Links</a>
+            <a href="">Analytics</a>
+          </div>
+
+          <div class="footer_link">
+            <h4>Resources</h4>
+            <a href="#">Blog</a>
+            <a href="">Developers</a>
+            <a href="">Support</a>
+          </div>
+
+          <div class="footer_link">
+            <h4>Company</h4>
+            <a href="#">About</a>
+            <a href="#">Our Team</a>
+            <a href="">Careers</a>
+            <a href="">Contact</a>
+          </div>
+
+          <div class="footer_image">
+            <a
+              href="https://web.facebook.com/profile.php?id=100089476980399&_rdc=1&_rdr"
+              ><img src="./images/icon-facebook.svg" alt=""
+            /></a>
+            <a href="https://twitter.com/atShortly"
+              ><img src="./images/icon-twitter.svg" alt=""
+            /></a>
+            <a href="#"><img src="./images/icon-pinterest.svg" alt="" /></a>
+            <a href="#"><img src="./images/icon-instagram.svg" alt="" /></a>
+          </div>
+        </div>
+      </footer>
+    </header>
+    <script src="index.js"></script>
+  </body>
+</html>
