@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fylo</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media-queries.css" />
+    <script defer src="./script.js"></script>
+
+    <!-- Google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Nav Bar -->
+
+    <header>
+      <nav class="flex bg-theme">
+        <div class="nav__logo">
+          <img src="./images/logo.svg" alt="Fylo" />
+        </div>
+        <ul class="nav__links flex centre">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#signup">Sign in</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero section -->
+
+    <main class="hero flex centre bg-theme container">
+      <div class="hero__wrapper flex centre column p-relative">
+        <div class="hero__bannerImg flex centre">
+          <img src="./images/other/illustration-intro.png" alt="" />
+        </div>
+        <div class="hero__text flex column centre">
+          <h1>All your files in one secure location, accessible anywhere.</h1>
+          <p>
+            Fylo stores all your most important files in one secure location.
+            Access them wherever you need, share and collaborate with friends
+            family, and co-workers
+          </p>
+          <div class="btn flex centre">
+            <a href="#">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="curve">
+      <img src="./images/background/bg-curvy-desktop.svg" alt="" />
+    </div>
+
+    <!-- Features -->
+
+    <article
+      class="features bg-secondary flex centre"
+      id="features"
+      role="grid"
+    >
+      <div class="features__wrapper flex column">
+        <div class="flex row">
+          <div class="feature__Element flex column centre">
+            <img
+              src="./images/icons/icon-access-anywhere.svg"
+              alt="Access anywhere"
+            />
+            <h3>Access your files, anywhere</h3>
+            <p>
+              The ability to use a smartphone, tablet or computer to access your
+              account means your files follow you everywhere
+            </p>
+          </div>
+          <div class="feature__Element flex column centre">
+            <img
+              src="./images/icons/icon-security.svg"
+              alt="Security your can trust"
+            />
+            <h3>Security you can trust</h3>
+            <p>
+              2-factor authentication and user-controlled encryption are just a
+              couple of the security features we allow to help secure your
+              files.
+            </p>
+          </div>
+        </div>
+        <div class="flex row">
+          <div class="feature__Element flex column centre">
+            <img
+              src="./images/icons/icon-collaboration.svg"
+              alt="Real time collaboration"
+            />
+            <h3>Real-time collaboration</h3>
+            <p>
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required.
+            </p>
+          </div>
+          <div class="feature__Element flex column centre">
+            <img
+              src="./images/icons/icon-any-file.svg"
+              alt="Store any type of file"
+            />
+            <h3>Store any type of file</h3>
+            <p>
+              Whether you're sharing holidays photos or work documents, Fylo has
+              you covered allowing for all file types to be securely stored and
+              shared.
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Features extended -->
+
+    <article class="features__extend bg-secondary" role="grid">
+      <div class="features__eWrapper flex row centre p-relative">
+        <div class="features__eImg">
+          <img
+            src="./images/other/illustration-stay-productive.png"
+            alt="Stay productive"
+          />
+        </div>
+        <div class="features__eText">
+          <div class="features__eTxtWrapper p-absolute">
+            <h2>Stay productive, wherever you are</h2>
+            <p>
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p>
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required.
+            </p>
+            <a href="#" class="cta flex p-absolute"
+              >See how Fylo works
+              <img src="./images/icons/icon-arrow.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Team -->
+
+    <article class="team bg-secondary flex centre" id="team" role="grid">
+      <div class="team__wrapper flex centre p-relative">
+        <img
+          src="./images/background/bg-quotes.png"
+          class="p-absolute"
+          alt=""
+        />
+        <div class="team__elemWrapper flex row">
+          <div class="team__element column">
+            <p>
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <div class="team__eProfile flex">
+              <img src="./images/other/profile-1.jpg" alt="" />
+              <div class="team__epGrp">
+                <p>Satish Patel</p>
+                <span>Founder & CEO, Huddle</span>
+              </div>
+            </div>
+          </div>
+          <div class="team__element column">
+            <p>
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <div class="team__eProfile flex">
+              <img src="./images/other/profile-2.jpg" alt="" />
+              <div class="team__epGrp">
+                <p>Bruce McKenzie</p>
+                <span>Founder & CEO, Huddle</span>
+              </div>
+            </div>
+          </div>
+          <div class="team__element column">
+            <p>
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <div class="team__eProfile flex">
+              <img src="./images/other/profile-3.jpg" alt="" />
+              <div class="team__epGrp">
+                <p>Iva Boyd</p>
+                <span>Founder & CEO, Huddle</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Signup -->
+
+    <article class="signUp p-relative" id="signup" role="grid">
+      <div class="signUp__top"></div>
+      <div class="signUp__wrapper p-absolute flex centre">
+        <div class="signup__box flex centre column">
+          <h2>Get early access today</h2>
+          <p class="signup__txt">
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+          <div class="signup__cta flex">
+            <div class="signup__form">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="email@example.com"
+              />
+              <p class="form__errElem hide">
+                Please enter a valid email address
+              </p>
+            </div>
+            <a href="#" class="btn flex centre" id="submitBtn">
+              Get Started For Free
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="signUp__bottom"></div>
+    </article>
+
+    <!-- Footer -->
+
+    <footer class="flex centre">
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <img src="./images/logo.svg" alt="" />
+        </div>
+        <div class="footer__elements flex">
+          <div class="footer__address flex">
+            <img src="./images/icons/icon-location.svg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+          <div class="footer__contact">
+            <div class="footer__cPhone flex centre">
+              <img src="./images/icons/icon-phone.svg" alt="" />
+              <p>+1-543-123-4567</p>
+            </div>
+            <div class="footer__cmail flex centre">
+              <img src="./images/icons/icon-email.svg" alt="" />
+              <p>example@fylo.com</p>
+            </div>
+          </div>
+          <div class="footer__links">
+            <ul class="flex column">
+              <li>About Us</li>
+              <li>Jobs</li>
+              <li>Press</li>
+              <li>Blogs</li>
+            </ul>
+          </div>
+          <div class="footer__links">
+            <ul class="flex column">
+              <li>Contact Us</li>
+              <li>Terms</li>
+              <li>Privacy</li>
+            </ul>
+          </div>
+          <div class="footer__socials">
+            <i class="ri-facebook-fill"></i>
+            <i class="ri-twitter-fill"></i>
+            <i class="ri-instagram-line"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

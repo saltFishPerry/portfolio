@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sen&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/813177f008.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Кобошева Перизат Portfolio</title>
+  </head>
+  <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+    <header>
+      <div class="wrapper">
+        <nav>
+          <ul class="top-nav">
+            <li tabindex="0">
+              <a href="#home">Главная</a>
+            </li>
+            <li tabindex="0">
+              <a href="#about">Обо мне</a>
+            </li>
+            <li tabindex="0">
+              <a href="#current">Проекты</a>
+            </li>
+            <li tabindex="0">
+              <a href="#contact">Контакты</a>
+            </li>
+          </ul>
+
+          <div tabindex="0" class="hamburger">
+            <label class="visually-hidden" for="ham-check">открыть меню</label>
+            <input
+              type="checkbox"
+              name="hamburger"
+              id="ham-check"
+              class="ham-input"
+            />
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul class="hamburger-menu" id="ham">
+              <li tabindex="0" class="ham-link">
+                <a href="#home">Главная</a>
+              </li>
+              <li tabindex="0" class="ham-link">
+                <a href="#about">Обо мне</a>
+              </li>
+              <li tabindex="0" class="ham-link">
+                <a href="#current">Проекты</a>
+              </li>
+              <li tabindex="0" class="ham-link">
+                <a href="#contact">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <section class="welcome" id="home">
+        <div class="wrapper">
+          <div class="welcome-name">
+            <h1>
+              <span class="name" id="messenger"></span>
+              <br />
+              <span>Front-End</span>
+              <br />
+              <span>Web Разработчик</span>
+            </h1>
+          </div>
+        </div>
+      </section>
+      <span aria-hidden="true" class="material-icons arrow" tabindex="0"
+        >expand_more</span
+      >
+
+      <div class="switch-light">
+        <input
+          type="checkbox"
+          class="light-check"
+          id="light-dark"
+          tabindex="0"
+        />
+
+        <label
+          for="light-dark"
+          class="toggle-light"
+          title="Switch to Light Mode"
+          tabindex="0"
+        >
+          <span aria-hidden="true" class="fas fa-moon"></span>
+          <span class="sr-only">Переключить на темную тему</span>
+
+          <span aria-hidden="true" class="fas fa-sun"></span>
+          <span class="sr-only">Переключить на светлую тему</span>
+
+          <div aria-hidden="true" class="switch"></div>
+        </label>
+      </div>
+    </header>
+
+    <main>
+      <div class="spacer"></div>
+
+      <section class="about-me" id="about">
+        <div class="wrapper">
+          <div class="about-name">
+            <h2>Обо мне</h2>
+            <p>/пэ́ри/ или /периза́т/</p>
+          </div>
+
+          <div class="about-me-container" style="overflow-x: hidden">
+            <div
+              class="about-pic aos-init aos-animate"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <p class="about-me-hello">
+                Привет. Меня зовут Пери. Приятно познакомиться.
+              </p>
+            </div>
+
+            <div
+              class="about-text aos-init aos-animate"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <p>
+                Я — Front-End Web Разработчик. Живу в Ростове-на-Дону. На
+                протяжении 6 лет работала удаленно, продвигая сайты в топ
+                поисковиков. Сейчас я хочу начать карьеру как Front-End
+                разработчик.
+              </p>
+              <p>
+                Для меня важно создавать сайты, которые помогают людям, улучшают
+                их жизнь. В верстке мне нравится создание не просто
+                привлекательного сайта, а доступного для всех пользователей,
+                понятного и простого в использовании.
+              </p>
+
+              <p>
+                Я хочу развиваться и расти как профессионал в компании со
+                здоровой рабочей атмосферой. Свяжитесь со мной по форме
+                <a href="#contact" tabindex="0">внизу,</a> если у вас появились
+                вопросы.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="spacer"></div>
+
+      <section class="skills">
+        <div class="wrapper">
+          <h2><span>Навыки</span></h2>
+
+          <ul class="skills-container">
+            <li class="skills-title">
+              <span
+                aria-hidden="true"
+                class="devicons devicons devicons-html5"
+                title="HTML5"
+              ></span>
+              <p>HTML5</p>
+            </li>
+
+            <li class="skills-title">
+              <span
+                aria-hidden="true"
+                class="devicons devicons-css3"
+                title="CSS"
+              ></span>
+              <p>CSS</p>
+            </li>
+
+            <li class="skills-title">
+              <span
+                aria-hidden="true"
+                class="devicons devicons-javascript_badge"
+                title="JavaScript &amp; ES6"
+              ></span>
+              <p>JavaScript + ES6</p>
+            </li>
+
+            <li class="skills-title">
+              <span
+                aria-hidden="true"
+                class="devicons devicons-sass"
+                title="SASS"
+              ></span>
+              <p>Sass</p>
+            </li>
+
+            <li class="skills-title">
+              <span
+                aria-hidden="true"
+                class="devicons devicons-mongodb"
+                title="Mongodb"
+              ></span>
+              <p>Mongodb</p>
+            </li>
+
+            <li class="skills-title">
+              <span
+                aria-hidden="true"
+                class="devicons devicons-git"
+                title="Git"
+              ></span>
+              <p>Git</p>
+            </li>
+
+            <li class="skills-title">
+              <span
+                aria-hidden="true"
+                class="devicons devicons-responsive"
+                title="Responsive Design"
+              ></span>
+              <p>
+                Responsive
+                <br />
+                Design
+              </p>
+            </li>
+
+            <li class="skills-title">
+              <span
+                aria-hidden="true"
+                class="fas fa-universal-access"
+                title="Accessibility"
+              ></span
+              ><span class="sr-only">Accessibility</span>
+              <p>Accessibility</p>
+            </li>
+          </ul>
+        </div>
+        <div class="wrapper">
+          <h2><span>Инструменты</span></h2>
+
+          <ul class="skills-container">
+            <li class="skills-title">
+              <span
+                aria-hidden="true"
+                class="devicons devicons-terminal_badge"
+                title="Terminal"
+              ></span>
+              <p>Terminal</p>
+            </li>
+
+            <li class="skills-title">
+              <span
+                aria-hidden="true"
+                class="devicons devicon-figma-plain"
+                title="Figma"
+              ></span>
+              <p>Figma</p>
+            </li>
+
+            <li class="skills-title">
+              <span
+                aria-hidden="true"
+                class="devicons devicons-bootstrap"
+                title="bootstrap &amp; ES6"
+              ></span>
+              <p>bootstrap</p>
+            </li>
+
+            <li class="skills-title">
+              <span
+                aria-hidden="true"
+                class="devicons devicons-wordpress"
+                title="Wordpress"
+              ></span>
+              <p>Wordpress</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="spacer"></div>
+
+      <!-- Projects -->
+      <section class="projects" id="current">
+        <div class="wrapper">
+          <h2><span>Проекты</span></h2>
+
+          <div class="project-container" style="overflow-x: hidden">
+            <div class="project project-one">
+              <div
+                class="mockup aos-init"
+                data-aos="zoom-in-right"
+                data-aos-duration="1500"
+              >
+                <img
+                  src="images/img1.png"
+                  alt="превью главной страницы сайта по аренде машин"
+                />
+              </div>
+
+              <div
+                class="project-text aos-init"
+                data-aos="zoom-in-left"
+                data-aos-duration="1500"
+              >
+                <h3>Аренда машин</h3>
+                <p>Ищете машину для аренды?</p>
+                <p>
+                  Мобильность в несколько кликов доступна благодаря простому и
+                  понятному сайту по аренде машин.
+                </p>
+
+                <div class="project-links">
+                  <a
+                    href="lease_cars/index.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    aria-hidden="true"
+                    title="ссылка на сайт по аренде машин"
+                    >Live Site</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project project-two">
+              <div
+                class="project-text aos-init"
+                data-aos="zoom-in-right"
+                data-aos-duration="1500"
+              >
+                <h3>Лендинг облачного хранилища данных</h3>
+                <p>Не хватает места?</p>
+                <p>
+                  Все ваши файлы в одном месте месте, безопасном и доступном из
+                  любого уголка планеты.
+                </p>
+
+                <div class="project-links">
+                  <a
+                    href="Fylo/index.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    aria-hidden="true"
+                    title="ссылка на лендинг Fylo"
+                    >Live Site</a
+                  >
+                </div>
+              </div>
+              <div
+                class="mockup aos-init"
+                data-aos="zoom-in-left"
+                data-aos-duration="1500"
+              >
+                <img
+                  src="images/img2.png"
+                  alt="превью лендинга Fylo - облачного хранилища данных "
+                />
+              </div>
+            </div>
+
+            <div class="project project-three">
+              <div
+                class="mockup aos-init"
+                data-aos="zoom-in-right"
+                data-aos-duration="1500"
+              >
+                <img src="images/img3.jpg" alt="превью FAQ страницы" />
+              </div>
+              <div
+                class="project-text aos-init"
+                data-aos="zoom-in-left"
+                data-aos-duration="1500"
+              >
+                <h3>FAQ страница</h3>
+                <p>Как сэкономить время пользователя?</p>
+                <p>
+                  Страница вопросов и ответов это «Must Have» для сложных
+                  продуктов или услуг. Компания дает ответы на популярные
+                  вопросы, тем самым помогая клиентам разобраться в продукте,
+                  сервисе и вариантах сотрудничества с организацией.
+                </p>
+
+                <div class="project-links">
+                  <a
+                    href="faq-accordion-master/index.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    aria-hidden="true"
+                    title="ссылка на FAQ страницу"
+                    >Live Site</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project project-four">
+              <div
+                class="project-text aos-init"
+                data-aos="zoom-in-right"
+                data-aos-duration="1500"
+              >
+                <h3>Loopstudios</h3>
+                <p>
+                  Многостраничный сайт компании Loopstudios представляет
+                  проекты, использующий VR-технологии
+                </p>
+
+                <div class="project-links">
+                  <a
+                    href="Loopstudios/index.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    aria-hidden="true"
+                    title="ссылка на компанию Loopstudios"
+                    >Live Site</a
+                  >
+                </div>
+              </div>
+              <div
+                class="mockup aos-init"
+                data-aos="zoom-in-left"
+                data-aos-duration="1500"
+              >
+                <img src="images/img4.jpg" alt="превью лендинга Loopstudios" />
+              </div>
+            </div>
+
+            <div class="project project-five">
+              <div
+                class="mockup aos-init"
+                data-aos="zoom-in-right"
+                data-aos-duration="1500"
+              >
+                <img src="images/img5.png" alt="превью FAQ страницы" />
+              </div>
+
+              <div
+                class="project-text aos-init"
+                data-aos="zoom-in-left"
+                data-aos-duration="1500"
+              >
+                <h3>Shortly</h3>
+                <p>
+                  Это простой лендинг, созданный с использованием API. Он
+                  позволяет пользователям сокращать URL-адреса.
+                </p>
+
+                <div class="project-links">
+                  <a
+                    href="url-shortening-web/index.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    aria-hidden="true"
+                    title="ссылка на компанию Shortly"
+                    >Live Site</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project project-six">
+              <div
+                class="project-text aos-init"
+                data-aos="zoom-in-right"
+                data-aos-duration="1500"
+              >
+                <h3>Форма выбора тарифа</h3>
+                <p>
+                  Простая форма, которая позволяет пользователю выбрать нужный
+                  тариф.
+                </p>
+
+                <div class="project-links">
+                  <a
+                    href="multi-form/index.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    aria-hidden="true"
+                    title="ссылка на форму"
+                    >Live Site</a
+                  >
+                </div>
+              </div>
+              <div
+                class="mockup aos-init"
+                data-aos="zoom-in-left"
+                data-aos-duration="1500"
+              >
+                <img src="images/img6.png" alt="превью формы" />
+              </div>
+            </div>
+
+            <div class="project project-seven">
+              <div
+                class="mockup aos-init"
+                data-aos="zoom-in-right"
+                data-aos-duration="1500"
+              >
+                <img src="images/img7.png" alt="превью блога" />
+              </div>
+
+              <div
+                class="project-text aos-init"
+                data-aos="zoom-in-left"
+                data-aos-duration="1500"
+              >
+                <h3>Our daily posts</h3>
+                <p>
+                  Небольшой блог на разные темы, который можно свободно
+                  дополнять новыми постами
+                </p>
+
+                <div class="project-links">
+                  <a
+                    href="blog/index.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    aria-hidden="true"
+                    title="ссылка на блог"
+                    >Live Site</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project project-eight">
+              <div
+                class="project-text aos-init"
+                data-aos="zoom-in-right"
+                data-aos-duration="1500"
+              >
+                <h3>Подписка на рассылку</h3>
+                <p>
+                  это опция на сайте, которая позволяет посетителям получать
+                  рассылки компании на указанный email адрес. С этого
+                  инструмента начинается любая стратегия email маркетинга.
+                </p>
+
+                <div class="project-links">
+                  <a
+                    href="newsletter-form/index.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    aria-hidden="true"
+                    title="ссылка на подписку"
+                    >Live Site</a
+                  >
+                </div>
+              </div>
+              <div
+                class="mockup aos-init"
+                data-aos="zoom-in-left"
+                data-aos-duration="1500"
+              >
+                <img src="images/img8.png" alt="превью страницы подписки" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="spacer"></div>
+
+      <section class="contact" id="contact">
+        <div class="wrapper">
+          <h2><span>Свяжитесь со мной</span></h2>
+
+          <div class="form-container">
+            <form
+              action="mailto:ladyperry.nyan@mail.ru"
+              method="POST"
+              enctype="multipart/form-data"
+              name="contact-form"
+            >
+              <label class="visually-hidden" for="name">Ваше имя</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your name"
+                required=""
+                tabindex="0"
+              />
+
+              <label class="visually-hidden" for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email"
+                required=""
+                tabindex="0"
+              />
+
+              <label class="visually-hidden" for="message"
+                >Ваше сообщение</label
+              >
+              <textarea
+                name="message"
+                id="message"
+                placeholder=""
+                rows="6"
+                cols="50"
+                wrap="hard"
+                required=""
+                tabindex="0"
+              >
+              </textarea>
+
+              <button type="submit" name="submit">Написать</button>
+            </form>
+
+            <div class="form-text">
+              <p>
+                Если у вас появились вопросы, пожалуйста, свяжитесь со мной по
+                форме.
+              </p>
+              <br />
+              <p>Я активно ищу работу как офлайн, так и удаленно.</p>
+              <br />
+              <p>
+                Свяжитесь со мной по почте:
+                <a
+                  href="mailto:ladyperry.nyan@mail.ru?subject=Связаться с Перизат по почте"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-hidden="true"
+                  title="Email Перизат Кобошева"
+                  >ladyperry.nyan@mail.ru</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <a class="back-to-top" tabindex="0" id="top">Наверх</a>
+        </div>
+      </section>
+
+      <div class="spacer"></div>
+    </main>
+
+    <footer>
+      <p>Designed by Perry 2023</p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

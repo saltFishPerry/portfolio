@@ -1,0 +1,345 @@
+/**  ROOT  **/
+:root {
+  --white: hsl(0, 0%, 100%);
+  --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --secondary: hsl(237, 12%, 33%);
+  --Dark-grayish-blue: hsl(240, 6%, 50%);
+  --primary-accent: hsl(14, 88%, 65%);
+  --font-size-very-small: 0.725rem;
+  --font-size-small: 0.925rem;
+  --font-size-mid: 2.5rem;
+  --font-size-large: 3rem;
+  --font-weight-thing: 100;
+  --font-weight-reg: 400;
+  --font-weight-bold: 700;
+  --rounded: 24px;
+}
+
+/** _______________________________________DEFAULT STYLING __________________________*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd,
+hr {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+/**____________________________________  BASE STYLING ______________________________ */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+}
+
+main {
+  text-rendering: optimizeSpeed;
+  padding: 1rem;
+}
+
+/** __________________________________________ MOBILE - DESIGN ___________________________*/
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem 2.75rem 2rem;
+  justify-content: center;
+  background: var(--white);
+  border-radius: var(--rounded);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  background-image: url(images/bg-pattern-desktop.svg);
+  background-size: 15rem;
+  background-position: top -7rem center;
+  background-repeat: no-repeat;
+  outline: 2px solid rgb(110, 110, 154);
+  
+}
+
+.container .image-wrapper {
+  width: 100%;
+}
+
+.container .image-wrapper .mobile-img {
+  width: 13rem;
+  position: relative;
+  bottom: 8rem;
+  margin: 0 auto;
+  transform: scale(1.3);
+}
+.container .image-wrapper .box {
+  display: none;
+}
+.container .image-wrapper .desktop-view {
+  display: none;
+}
+
+/**____________________________________ ACCORDION STYLING _____________________*/
+
+.accordion .faq-heading {
+  text-align: center;
+  font-size: var(--font-size-mid);
+  font-weight: var(--font-weight-bold);
+  color: var(--primary);
+  padding-bottom: 3rem;
+}
+
+.accordion .accordion-items {
+  color: var(--Very-dark-desaturated-blue);
+}
+
+.accordion .accordion-items .accordion-questions {
+  color: var(--Dark-grayish-blue);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.6s ease;
+}
+
+.accordion .accordion-items .accordion-questions h2 {
+  color: var(--Dark-grayish-blue);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-reg);
+  animation: sweep 0.5s ease-in-out;
+}
+
+.accordion .accordion-items .accordion-questions h2:hover {
+  cursor: pointer;
+  color: var(--primary-accent);
+}
+
+.accordion .accordion-items .accordion-questions .arrow-icon {
+  display: inline-block;
+  transition: all 300ms ease;
+}
+
+.accordion-answer {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease ease-out, opacity 0.3s ease;
+}
+
+.accordion-answer p {
+  font-size: var(--font-size-very-small);
+  color: var(--Dark-grayish-blue);
+}
+
+/* js classes */
+.accordion-items .accordion-questions.active h2 {
+  color: var(--Very-dark-desaturated-blue);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+}
+
+.accordion-items .accordion-questions.active + .accordion-answer {
+  padding: 0.5rem;
+  height: auto;
+  opacity: 1;
+  animation-name: sweep;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.accordion-items .active .arrow-icon {
+  transform: rotate(180deg);
+}
+
+hr {
+  display: block;
+  height: 1px;
+  width: 100%;
+  border: 0;
+  margin: 12px 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* _______________________MEDIA QUERIES_____________________ */
+/* for really small screens */
+@media screen and (max-width: 280px) {
+  .container{ 
+    max-width: 20rem;
+    align-items: center;
+  }
+ 
+}
+
+/* smaller screen */
+@media screen and (max-width: 412px) {
+ 
+  .container {
+    padding: 0 2rem 2rem 2rem;
+  }
+  .accordion {
+    /* max-width: 20rem; */
+    font-size: var(--font-size-very-small);
+  }
+
+  .container .image-wrapper .mobile-img {
+    bottom: 6rem;
+  }
+
+  .accordion-items .accordion-questions.active h2 {
+    color: var(--Very-dark-desaturated-blue);
+  }
+}
+
+/* larger screens */
+@media screen and (min-width: 800px) {
+  main{
+    padding: 3.5rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 68rem;
+    padding: 5rem 5rem 3rem 0;
+    position: relative;
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-size: 55rem;
+    background-position: top -13rem left -30rem, bottom 0 right 0rem;
+  }
+
+  .container .image-wrapper {
+    position: relative;
+    max-width: 50%;
+  }
+
+  .container .image-wrapper .mobile-view {
+    display: none;
+  }
+
+  .container .image-wrapper .desktop-view {
+    display: block;
+  }
+
+  .container .image-wrapper .box {
+    position: absolute;
+    top: 63.5%;
+    left: -8%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    max-width: 15rem;
+  }
+
+  .container .image-wrapper .desktop-view {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .container .image-wrapper .desktop-view img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .desktop-view {
+    clip-path: polygon(14% 0, 200% -100%, 100% 200%, 12% 200%);
+    transform: translateX(-7.5rem);
+  }
+
+  .accordion {
+    width: 40%;
+  }
+
+  .accordion .faq-heading {
+    text-align: left;
+    padding-left: 0.5rem;
+  }
+
+  .accordion .accordion-items .accordion-questions h2 {
+    font-size: var(--font-size-small);
+  }
+
+  .accordion-answer p {
+    font-size: var(--font-size-small);
+    color: var(--Dark-grayish-blue);
+  }
+}
+
+/*  animations */
+.fade-in {
+  -webkit-animation: fade-in 1.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.attribution {
+  width: 100%;
+  text-align: center;
+  margin-top: 1em;
+  padding: 1em 0;
+  position: fixed;
+  bottom: 0;
+  font-size: 0.8rem;
+  background: rgba(94, 54, 54, 0.15);
+  backdrop-filter: blur(5px);
+  color: violet;
+}
+
+.attribution a {
+  color: var(--white);
+}

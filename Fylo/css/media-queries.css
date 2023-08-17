@@ -1,0 +1,223 @@
+@media screen and (max-width: 1368px){
+    footer{
+        padding-top: 5rem;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .features__eTxtWrapper h2{
+        font-size: 3rem;
+    }
+
+    .features__eTxtWrapper p{
+        font-size: .75rem;
+    }
+
+    .features__eImg img{
+        width: 80%;
+    }
+
+    .signup__cta #email{
+        width: 400px;
+    }
+
+    .signup__cta .btn{
+        width: 200px;
+    }
+
+    footer{
+        padding-inline: 5rem;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .features__eTxtWrapper h2{
+        font-size: 2.5rem;
+    }
+
+    .features__eTxtWrapper p{
+        font-size: .65rem;
+    }
+
+    .features__eTxtWrapper a{
+        font-size: .8rem;
+    }
+
+    .features__eWrapper{
+        display: grid;
+    }
+
+    .features__eTxtWrapper{
+        margin: 5rem 0;
+        position: relative;
+    }
+
+    .features__eImg{
+        display: flex;
+        justify-content: center;
+    }
+
+    .features__eTxtWrapper, .features__eText{
+        width: 100%;
+    }
+
+    .signup__cta #email{
+        width: 380px;
+    }
+
+    .signup__cta .btn{
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .signup__cta #email{
+        width: 350px;
+    }
+
+    .signup__cta .btn{
+        width: 150px;
+    }
+
+    footer{
+        padding-top: 15rem;
+    }
+}
+
+@media screen and (max-width: 895px) {
+    .features__eText{
+        width: auto;
+    }
+
+    .features__eTxtWrapper{
+        width: 70%;
+    }
+
+    .signup__cta{
+        display: block;
+    }
+
+    .signup__cta .btn{
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .team{
+        padding-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 795px){
+    .footer__elements{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .footer__elements > div{
+        margin: 2rem 0;
+    }
+
+    .footer__address{
+        width: 75%;
+    }
+
+    .hero__text h1{
+        font-size: 2rem;
+    }    
+
+    .hero__text p{
+        font-size: .8rem;
+    }
+
+    .hero__text{
+        width: auto;
+    }
+
+    .hero{
+        padding-bottom: 5rem;
+    }
+
+    .feature__Element h3{
+        font-size: .9rem;
+    }
+
+    .feature__Element p{
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .signup__box h2{
+        font-size: 1.5rem;
+    }
+
+    .signup__txt{
+        font-size: .75rem;
+    }
+
+    .signup__cta #email{
+        width: 300px;
+    }
+
+    .nav__links li a{
+        font-size: .8rem;
+    }
+
+    .hero__text h1{
+        font-size: 1.75rem;
+    }    
+
+    .hero__text p{
+        font-size: .6rem;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .team{
+        padding-bottom: 10rem;
+    }
+
+    .footer__elements{
+        grid-template-columns: auto;
+    }
+
+    .footer__elements > div{
+        width: 100%;
+    }
+
+    .signup__cta #email{
+        width: 250px;
+    }
+
+    .signup__box h2{
+        font-size: 1.16rem;
+    }
+
+    .signup__txt{
+        line-height: 1.5;
+    }
+
+    .nav__links li a{
+        font-size: .6rem;
+    }
+
+    .signup__cta #email{
+        width: 200px;
+    }
+
+    .team__wrapper{
+        width: 100%;
+    }
+
+    .hero{
+        padding-bottom: 15rem;
+    }
+
+    .hero__text h1{
+        font-size: 1.5rem;
+    }    
+
+    .hero__text p{
+        font-size: .5rem;
+    }
+}
